@@ -23,3 +23,6 @@
 
 ;; load ~/.emacs.d/settings
 (mapc 'load (directory-files "~/.emacs.d/settings" t "^[A-Za-z]*\\.el"))
+
+;; Change default font size
+(set-face-attribute 'default nil :height 140)
