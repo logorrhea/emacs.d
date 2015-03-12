@@ -1,6 +1,6 @@
 ;; Load use-package module
-(add-to-list 'load-path "~/.emacs.d/vendor/use-package")
 (require 'cl)
+(add-to-list 'load-path "~/.emacs.d/vendor/use-package")
 (require 'use-package)
 
 (load-file "~/.emacs.d/packages.el")
