@@ -10,7 +10,9 @@
       evil-mode-line-format nil
       evil-search-module 'evil-search
       evil-want-C-u-scroll t
-      evil-default-cursor t)
+      evil-default-cursor t
+	  evil-toggle-key "C-`")
+
 (setq-default evil-shift-width 2)
 
 ;; https://github.com/cofi/evil-leader/issues/10
