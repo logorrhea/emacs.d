@@ -44,6 +44,7 @@
   "d" 'dired-jump
   "g" 'magit-status
   "f" 'fiplr-find-file
+  "N" 'neotree-toggle
 
   "p b" 'projectile-switch-to-buffer
   "p D" 'projectile-dired
