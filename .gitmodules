@@ -1,0 +1,6 @@
+[submodule "vendor/use-package"]
+	path = vendor/use-package
+	url = https://github.com/jwiegley/use-package
+[submodule "marktran-defs"]
+	path = marktran-defs
+	url = git://github.com/marktran/emacs.d.git

@@ -1,6 +1,6 @@
 (require 'package)
 
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages") t)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 
 (unless (file-exists-p "~/.emacs.d//elpha/archives/melpa")
   (package-refresh-contents))
@@ -12,7 +12,7 @@
   re-downloaded in order to locate PACKAGE."
   (if (package-installed-p package min-version)
     t
-    (if (or (assoc package package-archie-contents) no-refresh)
+    (if (or (assoc package package-archive-contents) no-refresh)
       (package-install package)
       (progn
         (package-refresh-contents)

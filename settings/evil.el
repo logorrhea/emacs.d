@@ -1,11 +1,12 @@
 (require-package 'evil)
 (require-package 'evil-leader)
-;; (require-package 'evil-numbers)
-;; (require-package 'evil-surround)
+(require-package 'evil-numbers)
+(require-package 'evil-surround)
+(require-package 'evil-nerd-commenter)
 
 (setq evil-ex-search-vim-style-regexp t
       evil-leader/in-all-state t
-      evil-leader/leader ","
+      evil-leader/leader "SPC"
       evil-mode-line-format nil
       evil-search-module 'evil-search
       evil-want-C-u-scroll t
@@ -40,11 +41,15 @@
   "c" 'simpleclip-copy
   "d" 'dired-jump
   "g" 'magit-status
+  "f" 'fiplr-find-file
 
   "p b" 'projectile-switch-to-buffer
   "p D" 'projectile-dired
   "p d" 'projectile-find-dir
-  "p e" 'projectile-explorer-open)
+  "p e" 'projectile-explorer-open
+  "p p" 'projectile-find-file)
+
+(evilnc-default-hotkeys)
 
 ;; emmet mode
 (defadvice emmet-expand-line (after evil-normal-state activate)
